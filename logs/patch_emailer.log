@@ -1,0 +1,39 @@
+fiv-dev-db8.fivium.local fiv-dev-dbdg1.decc.local fiv-dev-db7.fivium.local edu-dev-db7.decc.local edu-dev-db3.decc.local edu-dev-db2.decc.local 
+Running Patch checker for fiv-dev-db8.fivium.local 
+ssh oracle@fiv-dev-db8.fivium.local perl < /oracle/scripts/patch_parser/patch_parser.pl >> /oracle/scripts/patch_parser/patch.log 
+Running Patch checker for fiv-dev-dbdg1.decc.local 
+ssh oracle@fiv-dev-dbdg1.decc.local perl < /oracle/scripts/patch_parser/patch_parser.pl >> /oracle/scripts/patch_parser/patch.log 
+Running Patch checker for fiv-dev-db7.fivium.local 
+ssh oracle@fiv-dev-db7.fivium.local perl < /oracle/scripts/patch_parser/patch_parser.pl >> /oracle/scripts/patch_parser/patch.log 
+Running Patch checker for edu-dev-db7.decc.local 
+ssh oracle@edu-dev-db7.decc.local perl < /oracle/scripts/patch_parser/patch_parser.pl >> /oracle/scripts/patch_parser/patch.log 
+Running Patch checker for edu-dev-db3.decc.local 
+ssh oracle@edu-dev-db3.decc.local perl < /oracle/scripts/patch_parser/patch_parser.pl >> /oracle/scripts/patch_parser/patch.log 
+Running Patch checker for edu-dev-db2.decc.local 
+ssh oracle@edu-dev-db2.decc.local perl < /oracle/scripts/patch_parser/patch_parser.pl >> /oracle/scripts/patch_parser/patch.log 
+.-------------------------------------------------------------------------------------------------------------------------------------------------------.
+|                                                        Oracle Patches Status as of  10-12-2018                                                        |
++---------------+--------------------------+--------------+------------------+---------------+-------------------+------------------+-------------------+
+| instance_name | hostname                 | psu_patch_id | psu_release_date | ojvm_patch_id | ojvm_release_date | one_off_patch_id | one_off_patch_id2 |
++---------------+--------------------------+--------------+------------------+---------------+-------------------+------------------+-------------------+
+| ec3dev1       | fiv-dev-db8.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| ec3st1        | fiv-dev-db8.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| ec3dev1_01    | fiv-dev-dbdg1.decc.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| ec3st1_01     | fiv-dev-dbdg1.decc.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| icmsdev12c    | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| spdev12c      | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| ssdev1        | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| ssst1         | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| spst1         | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| icmsst1       | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| spdev2        | fiv-dev-db7.fivium.local |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| ssdevdg       | edu-dev-db7.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| icmsdg        | edu-dev-db7.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| spdevdg       | edu-dev-db7.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| mmodev1       | edu-dev-db3.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| mmost1        | edu-dev-db3.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         18795927 |                   |
+| edudev3       | edu-dev-db2.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         28577943 |          18795927 |
+| edust1        | edu-dev-db2.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         28577943 |          18795927 |
+| etldev2       | edu-dev-db2.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         28577943 |          18795927 |
+| etlst2        | edu-dev-db2.decc.local   |     28259833 |           181016 |      28440711 |            181016 |         28577943 |          18795927 |
+'---------------+--------------------------+--------------+------------------+---------------+-------------------+------------------+-------------------'
