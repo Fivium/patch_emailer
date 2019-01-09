@@ -92,16 +92,16 @@ close $fh;
 #Email report to DBA's and Yao                                                              #
 #-------------------------------------------------------------------------------------------
 my $msg;
-my $mail_host='fiv-smtp-out.fivium.local';
+my $mail_host='';
 my $report_filename_with_path = "/oracle/scripts/patch_parser/report.txt";
 my $report_file_name= "report.txt";
 
 
 $msg = MIME::Lite->new(
-    From    => 'fivium-HQ-development@fivium.co.uk',
-    To      => 'dba+developmentdb@fivium.co.uk',
-    Cc      => 'kwok-yao.chim@fivium.co.uk', 
-    Subject => 'Dev Databases Patch Level',
+    From    => '',
+    To      => '',
+    Cc      => '', 
+    Subject => 'Databases Patch Level',
     Type    => 'multipart/mixed'
 );
 
